@@ -58,6 +58,7 @@ DirectoryIndex app.php
 </IfModule>
 
 <IfModule !mod_rewrite.c>
+Redirect 301  http://site.ru/test-2/
     <IfModule mod_alias.c>
         # When mod_rewrite is not available, we instruct a temporary redirect of
         # the start page to the front controller explicitly so that the website
